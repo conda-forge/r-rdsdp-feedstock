@@ -1,4 +1,4 @@
-{% set version = "1.0.5.2.1" %}
+{% set version = "1.0.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rdsdp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rdsdp/Rdsdp_{{ version }}.tar.gz
-  sha256: d69b184809be46fc09fb0448f4985bf22fb294b60ece04729ddd4bb35960a552
+  sha256: dd462374f38ae45791c024805582e1275936cb96c2127fd2dceeb3df0f18bfdd
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
